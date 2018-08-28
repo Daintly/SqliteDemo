@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Bc-aO-OBA">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1000" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAs-DG-Ut9">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="40"/>
+                    <state key="normal" title="增加"/>
+                    <connections>
+                        <action selector="add:" destination="-1" eventType="touchUpInside" id="oh8-PT-Egb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-y6-Xvl">
+                    <rect key="frame" x="94" y="0.0" width="94" height="40"/>
+                    <state key="normal" title="删除"/>
+                    <connections>
+                        <action selector="delete:" destination="-1" eventType="touchUpInside" id="lWm-db-nqo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqt-4K-doE">
+                    <rect key="frame" x="188" y="0.0" width="94" height="40"/>
+                    <state key="normal" title="更新"/>
+                    <connections>
+                        <action selector="update:" destination="-1" eventType="touchUpInside" id="Pio-0C-Bbd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI7-GD-mCi">
+                    <rect key="frame" x="281" y="0.0" width="94" height="40"/>
+                    <state key="normal" title="查询"/>
+                    <connections>
+                        <action selector="query:" destination="-1" eventType="touchUpInside" id="mw5-eN-v4o"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JAs-DG-Ut9" firstAttribute="top" secondItem="9Bc-aO-OBA" secondAttribute="topMargin" id="1c8-dg-wnN"/>
+                <constraint firstItem="qqt-4K-doE" firstAttribute="height" secondItem="bB1-y6-Xvl" secondAttribute="height" id="4H5-Vf-WRI"/>
+                <constraint firstItem="bB1-y6-Xvl" firstAttribute="top" secondItem="JAs-DG-Ut9" secondAttribute="top" id="7lx-KN-JTA"/>
+                <constraint firstItem="JAs-DG-Ut9" firstAttribute="leading" secondItem="9Bc-aO-OBA" secondAttribute="leading" id="HDF-RP-SYV"/>
+                <constraint firstItem="bB1-y6-Xvl" firstAttribute="leading" secondItem="JAs-DG-Ut9" secondAttribute="trailing" id="Ioz-S4-gUb"/>
+                <constraint firstItem="YI7-GD-mCi" firstAttribute="height" secondItem="qqt-4K-doE" secondAttribute="height" id="L5N-eJ-mQP"/>
+                <constraint firstItem="YI7-GD-mCi" firstAttribute="top" secondItem="qqt-4K-doE" secondAttribute="top" id="Qco-NL-C4W"/>
+                <constraint firstItem="qqt-4K-doE" firstAttribute="leading" secondItem="bB1-y6-Xvl" secondAttribute="trailing" id="SpX-u4-KiE"/>
+                <constraint firstItem="YI7-GD-mCi" firstAttribute="trailing" secondItem="9Bc-aO-OBA" secondAttribute="trailing" id="ZRN-1H-Ezd"/>
+                <constraint firstItem="bB1-y6-Xvl" firstAttribute="height" secondItem="JAs-DG-Ut9" secondAttribute="height" id="dzM-E8-Mla"/>
+                <constraint firstItem="JAs-DG-Ut9" firstAttribute="width" secondItem="9Bc-aO-OBA" secondAttribute="width" multiplier="0.25/1" id="eLj-33-XVP"/>
+                <constraint firstItem="qqt-4K-doE" firstAttribute="width" secondItem="bB1-y6-Xvl" secondAttribute="width" id="kO1-0a-x4C"/>
+                <constraint firstItem="qqt-4K-doE" firstAttribute="top" secondItem="bB1-y6-Xvl" secondAttribute="top" id="nM5-9M-eiK"/>
+                <constraint firstItem="YI7-GD-mCi" firstAttribute="width" secondItem="qqt-4K-doE" secondAttribute="width" id="v9J-xm-Ev6"/>
+                <constraint firstItem="bB1-y6-Xvl" firstAttribute="width" secondItem="JAs-DG-Ut9" secondAttribute="width" id="wbc-wF-Awl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-215" y="-73"/>
+        </view>
+    </objects>
+</document>
